@@ -1,0 +1,651 @@
+/***** IMPORT FONTS******/
+
+/*font-family: 'Lato', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/*MEDIA QUERY version SMARTPHONE*/
+@media (max-width: 809px) {
+  * {
+    transition: all 1s;
+  }
+
+  /*****ESTILOS NAV*****/
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 75px;
+    grid-gap: 25px;
+    text-align: center;
+    border-radius: 0 0 20px 0;
+    font-family: "Lato", sans-serif;
+  }
+
+  .nav #menu {
+    border-radius: 35px;
+    background-color: #f52293;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 120px;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+  }
+
+  .nav img {
+    width: 50px;
+  }
+
+  /**** ESTILOS BANNER *****/
+
+  .banner {
+    font-family: "Lato", sans-serif;
+
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "a a a a a a a a"
+      "b b b b b b b b"
+      "c c c c c c c c";
+    background-color: #0a0a0a;
+    color: #ffff;
+    grid-auto-rows: 155px;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.76),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("../img/fondo-inicio.jpg");
+    background-position: 0 0, 0 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+  }
+
+  .banner div:nth-child(1) {
+    grid-area: a;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20pt;
+  }
+
+  .banner div:nth-child(1) h1 {
+    font-size: 40px;
+    padding-top: 40px;
+  }
+
+  .banner div:nth-child(2) {
+    max-width: 40%;
+    margin: 0 auto;
+    grid-area: b;
+    border-radius: 35px;
+    background-color: #f52293;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-family: "Lato", sans-serif;
+  }
+
+  .banner div:nth-child(2) p {
+    font-size: 20px;
+  }
+
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    color: white;
+  }
+
+  #irPlatos {
+    cursor: pointer;
+  }
+
+  /**** ESTILOS REDES SOCIALES ****/
+
+  .banner div:nth-child(3) {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 20px;
+    grid-area: c;
+  }
+
+  .banner div:nth-child(3) span {
+    margin-right: 10px;
+    background-color: #f52293;
+    padding: 8px;
+    border-radius: 100%;
+  }
+
+  /* ESTILOS SECCION HORARIOS */
+
+  .boxHorarios span {
+    font-size: 35px;
+    background-color: #f52293;
+    border-radius: 100%;
+    color: white;
+    padding: 8px;
+  }
+
+  .boxHorarios p {
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+  }
+
+  .boxHorarios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 165px;
+    grid-template-areas:
+      ". a a ."
+      ". b b ."
+      ". c c .";
+    text-align: center;
+    box-shadow: 0 22px 52px 0 rgba(0, 0, 0, 0.05);
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .boxHorarios div:nth-child(1) {
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .boxHorarios div:nth-child(2) {
+    grid-area: b;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .boxHorarios div:nth-child(3) {
+    grid-area: c;
+    align-self: center;
+    justify-self: center;
+  }
+
+  /* ESTILOS MENU PLATOS*/
+
+  .food img {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .food h3 {
+    border-bottom: 2px solid #f52293;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+  }
+
+  .food p {
+    font-family: "Lato", sans-serif;
+    padding: 2px;
+    background: #f52293;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .food {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 14px;
+    grid-row-gap: 6em;
+    text-align: center;
+    grid-template-rows: repeat(3, 100px);
+    align-items: center;
+    width: 80%;
+    margin: 90px auto;
+  }
+
+  /* ESTILOS NEWSLETTER*/
+
+  .newsletter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-image: url(../img/fondo-sushi.svg);
+    background-color: rgba(0, 0, 0, 0.596);
+    background-position: 50% 50%;
+    text-align: center;
+    color: white;
+    font-family: "Lato", sans-serif;
+  }
+
+  .newsletter h2 {
+    font-size: 30px;
+  }
+
+  .newsletter p {
+    line-height: 1.7;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .newsletter div:nth-child(1) {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  .newsletter div:nth-child(2) {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .newsletter div:nth-child(3) input:nth-child(1) {
+    width: 60%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .newsletter button {
+    width: 20%;
+    background-color: #f52293;
+    margin: 5px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+  }
+
+  .newsletter button:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .table-container {
+    margin-bottom: 50px;
+  }
+}
+/*MEDIA QUERY correcion mini-SMARTPHONE*/
+@media (max-width: 330px) {
+  * {
+    transition: all 1s;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 46px;
+    grid-gap: 0px;
+  }
+  .nav #menu {
+    display: none;
+  }
+  .banner div:nth-child(3) span {
+    margin-right: 1px;
+    background-color: #f52293;
+    padding: 5px;
+    border-radius: 100%;
+  }
+  .banner div:nth-child(2) {
+    max-width: 90%;
+    padding: 5px;
+  }
+  .food {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 100px);
+  }
+  .food h3 {
+    font-size: 23px;
+  }
+  .food img {
+    width: 80%;
+  }
+
+  .newsletter button {
+    width: 50%;
+  }
+  .table-container {
+    margin-bottom: 50px;
+  }
+}
+/*MEDIA QUERY para corregir las imagenes*/
+@media (min-width: 585px) {
+  * {
+    transition: all 1s;
+  }
+  .food img {
+    width: 200px;
+  }
+}
+
+/*MEDIA QUERY version TABLET*/
+@media (min-width: 809px) {
+  * {
+    transition: all 1s;
+  }
+
+  .nav {
+    font-family: "Lato", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 75px;
+    grid-gap: 245px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+  }
+
+  .nav img {
+    max-width: 60px;
+  }
+
+  .nav #menu {
+    border-radius: 35px;
+    background-color: #f52293;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 120px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+  }
+
+  /**** ESTILOS BANNER *****/
+
+  .banner {
+    font-family: "Lato", sans-serif;
+
+    margin: 20px auto;
+    display: grid;
+    grid-template-areas:
+      "a a a a a a a a"
+      "b b b b b b b b"
+      "c c c c c c c c";
+    background-color: #0a0a0a;
+    color: #ffff;
+    grid-auto-rows: 155px;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.76),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("../img/fondo-inicio.jpg");
+    background-position: 0 0, 0 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+  }
+
+  .banner div:nth-child(1) {
+    grid-area: a;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20pt;
+  }
+
+  .banner div:nth-child(1) h1 {
+    font-size: 70px;
+    padding-top: 50px;
+    transition: all 8s;
+  }
+
+  .banner div:nth-child(2) {
+    width: 20%;
+    margin: 0 auto;
+    grid-area: b;
+    border-radius: 35px;
+    background-color: #f52293;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: "Lato", sans-serif;
+  }
+
+  .banner div:nth-child(2) p {
+    font-size: 20px;
+  }
+
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    color: white;
+  }
+
+  #irPlatos {
+    cursor: pointer;
+  }
+
+  /**** ESTILOS REDES SOCIALES ****/
+
+  .banner div:nth-child(3) {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 30px;
+    grid-area: c;
+  }
+
+  .banner div:nth-child(3) span {
+    margin-right: 15px;
+    background-color: #f52293;
+    padding: 10px;
+    border-radius: 100%;
+  }
+
+  /* ESTILOS SECCION HORARIOS */
+
+  .boxHorarios span {
+    font-size: 35px;
+    background-color: #f52293;
+    border-radius: 100%;
+    color: white;
+    padding: 8px;
+  }
+
+  .boxHorarios p {
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+  }
+
+  .boxHorarios {
+    display: grid;
+
+    grid-gap: 10px;
+    grid-auto-rows: 165px;
+    grid-template-areas: ". a b c. ";
+    text-align: center;
+    box-shadow: 0 22px 52px 0 rgba(0, 0, 0, 0.05);
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .boxHorarios div:nth-child(1) {
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+  }
+
+  .boxHorarios div:nth-child(2) {
+    grid-area: b;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .boxHorarios div:nth-child(3) {
+    grid-area: c;
+    align-self: center;
+    justify-self: center;
+  }
+
+  /* ESTILOS MENU PLATOS*/
+
+  .food img {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 100%;
+    width: 80%;
+  }
+
+  .food h3 {
+    border-bottom: 2px solid #f52293;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+  }
+
+  .food p {
+    font-family: "Lato", sans-serif;
+    font-size: 20pt;
+    background: #f52293;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .food {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 14px;
+    grid-row-gap: 14em;
+    text-align: center;
+    grid-template-rows: repeat(3, 100px);
+    align-items: center;
+    width: 80%;
+    margin: 130px auto;
+  }
+
+  /* ESTILOS NEWSLETTER*/
+
+  .newsletter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-image: url(../img/fondo-sushi.svg);
+    background-color: rgba(0, 0, 0, 0.596);
+    background-position: 50% 50%;
+    text-align: center;
+    color: white;
+    font-family: "Lato", sans-serif;
+  }
+
+  .newsletter h2 {
+    font-size: 40pt;
+  }
+
+  .newsletter p {
+    line-height: 1.7;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  .newsletter div:nth-child(1) {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  .newsletter div:nth-child(2) {
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  .newsletter div:nth-child(3) input:nth-child(1) {
+    width: 60%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .newsletter button {
+    width: 20%;
+    background-color: #f52293;
+    margin: 5px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+  }
+
+  .newsletter button:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .table-container {
+    margin-bottom: 50px;
+  }
+}
+
+/*MEDIA QUERY version PC*/
+@media (min-width: 1060px) {
+  * {
+    transition: all 1s;
+  }
+  /*** ESTILOS MENU PLATOS ***/
+  .food {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .food p {
+    width: 80%;
+    border-top: 2px solid #f52293;
+  }
+  .food h3 {
+    border: none;
+  }
+
+  /*** ESTILOS NEWSLETTER ***/
+  .newsletter {
+    margin-top: -200px;
+  }
+  .newsletter div:nth-child(2) {
+    width: 30%;
+  }
+  .newsletter div:nth-child(3) input:nth-child(1) {
+    width: 20%;
+  }
+  .newsletter button {
+    width: 10%;
+  }
+}
+/*MEDIA QUERY corregir img platos para PC*/
+@media (min-width: 1590px) {
+  * {
+    transition: all 1s;
+  }
+  /*** ESTILOS MENU PLATOS ***/
+  .food img {
+    width: 65%;
+  }
+  .food p {
+    width: 65%;
+    border-top: 2px solid #f52293;
+  }
+}
+
+/*** ESTILOS GENERALES FOOTER ***/
+footer .contenedor {
+  display: flex;
+  font-family: "Lato", sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+}
+.copy {
+  font-size: 20px;
+}
+.redes {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+}
+.redes a {
+  color: #333;
+  text-decoration: none;
+}
