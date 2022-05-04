@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="icomoon/style.css" />
     <link rel="stylesheet" href="css/estilos-tabla.css" />
-    <title>Web sushi</title>
+    <title>Reserva Online - Web sushi</title>
   </head>
 
   <body>
     <nav class="nav" role="navigation">
       <div>
         <a href="index.html" aria-label="ir al home">
-          <img src="img/logo-sushi.svg"  alt="logo sushi"/></a>
+          <img src="img/logo-sushi.svg" alt="logo sushi"/></a>
         <h1>Sushii</h1>
       </div>
       <div>
@@ -28,7 +28,7 @@
 
     <main class="banner" role="main">
       <div>
-        <h2>Authentic <br />Japanese Sushi</h2>
+        <h2>Reservas <br />Japanese Sushi</h2>
       </div>
       <div>
         <a href="menu.html" aria-label="ver los platos...">
@@ -61,37 +61,69 @@
       </div>
     </div>
 
-    <div class="video">
-      <iframe
-        width="80%"
-        height="415"
-        src="https://www.youtube.com/embed/o3jCAKkLdTs"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
-
     <div class="newsletter">
       <div>
-        <h2>Nuestra filosofía <br /> del Sushi</h2>
+        <h2>Reserva tú mesa: <br /></h2>
       </div>
-      <div>
-        <p>
-          <em>
-            Tenemos un firme compromiso con la calidad, 
-            el producto, la gastronomía de fusión y la solidaridad, 
-            con el objeto de ofrecer una experiencia enriquecedora 
-            a clientes y franquiciados. 
-          </em>
-        </p>
-      </div>
+   
+      <form action="" method="post">
+        <fieldset>
+          <legend>
+            <b>Personas (obligatorio)</b>
+            </legend>
+          <br />
+          <select name="Personas" class="form" required >
+            <option value="-1" disabled="">Seleccione</option>
+            <option value="1 Persona">1 Persona</option>
+            <option value="2 Persona">2 Personas</option>
+            <option value="3 Persona">3 Personas</option>
+            <option value="4 Persona">4 Personas</option>
+            <option value="+5 Persona">+5 Personas</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <b>Hora (obligatorio)</b>
+            </legend>
+            <br />
+          <select name="hora" class="form" required>
+            <optgroup label="Mediodia"> 
+              <option value="13:00 ">13:00</option>
+              <option value="13:30 ">13:30</option>
+              <option value="14:00 ">14:00</option>
+              <option value="14:30 ">14:30</option>
+            </optgroup>
+            <optgroup label="Noche"> 
+              <option value="21:00 ">21:00</option>
+              <option value="21:30 ">21:30</option>
+              <option value="22:00 ">22:00</option>
+              <option value="22:30 ">22:30</option>
+          </optgroup>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <b>Telefono (obligatorio)</b>
+          </legend>
+          <br />
+          <input 
+            class="form" 
+            type="tel" 
+            name="mail" 
+            placeholder="+34" 
+            required
+             />
+        </fieldset>
+        <br />
+        <button>Enviar</button>
+      </form>
     </div>
 
     <div class="table-container">
-   
-      <table class="table-rwd">
+      
+      <table class="table-rwd" aria-describedby="info">
         <caption>Horarios 🕑</caption>
         <tr>
           <th>Lunes</th>

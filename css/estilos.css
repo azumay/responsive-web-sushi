@@ -3,6 +3,19 @@
 /*font-family: 'Lato', sans-serif;*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
+.video iframe {
+  margin: auto;
+}
+
+.form {
+  border: 3px solid #9C1169;
+  padding: 8px;
+  text-align: center;
+  margin: 5px auto;
+  font-size: 15pt;
+  width: 150px;
+}
+
 /*MEDIA QUERY version SMARTPHONE*/
 @media (max-width: 809px) {
   * {
@@ -22,7 +35,7 @@
 
   .nav #menu {
     border-radius: 35px;
-    background-color: #f52293;
+    background-color: #9C1169;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -71,7 +84,7 @@
     font-size: 20pt;
   }
 
-  .banner div:nth-child(1) h1 {
+  .banner div:nth-child(1) h2 {
     font-size: 40px;
     padding-top: 40px;
   }
@@ -81,7 +94,7 @@
     margin: 0 auto;
     grid-area: b;
     border-radius: 35px;
-    background-color: #f52293;
+    background-color: #9C1169;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -114,7 +127,7 @@
 
   .banner div:nth-child(3) span {
     margin-right: 10px;
-    background-color: #f52293;
+    background-color: #9C1169;
     padding: 8px;
     border-radius: 100%;
   }
@@ -123,7 +136,7 @@
 
   .boxHorarios span {
     font-size: 35px;
-    background-color: #f52293;
+    background-color: #9C1169;
     border-radius: 100%;
     color: white;
     padding: 8px;
@@ -177,15 +190,15 @@
   }
 
   .food h3 {
-    border-bottom: 2px solid #f52293;
+    border-bottom: 2px solid #9C1169;
     font-weight: bold;
     font-family: "Lato", sans-serif;
   }
 
-  .food p {
+  .food h4 {
     font-family: "Lato", sans-serif;
     padding: 2px;
-    background: #f52293;
+    background: #9C1169;
     width: 50%;
     margin: 0 auto;
     color: white;
@@ -203,6 +216,14 @@
     align-items: center;
     width: 80%;
     margin: 90px auto;
+  }
+  .video {
+    display: grid;
+    height: 400px;
+  }
+  .video iframe {
+    margin: auto;
+    height: 300px;
   }
 
   /* ESTILOS NEWSLETTER*/
@@ -249,7 +270,7 @@
 
   .newsletter button {
     width: 20%;
-    background-color: #f52293;
+    background-color: #9C1169;
     margin: 5px auto;
     padding: 15px;
     border-radius: 10px;
@@ -283,7 +304,7 @@
   }
   .banner div:nth-child(3) span {
     margin-right: 1px;
-    background-color: #f52293;
+    background-color: #9C1169;
     padding: 5px;
     border-radius: 100%;
   }
@@ -295,7 +316,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 100px);
   }
-  .food h3 {
+  .food h4 {
     font-size: 23px;
   }
   .food img {
@@ -325,6 +346,13 @@
     transition: all 1s;
   }
 
+  .video {
+    display: grid;
+    width: 80%;
+    margin: 0px auto;
+    height: 500px;
+    text-align: center;
+  }
   .nav {
     font-family: "Lato", sans-serif;
     display: grid;
@@ -341,7 +369,7 @@
 
   .nav #menu {
     border-radius: 35px;
-    background-color: #f52293;
+    background-color: #9C1169;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -386,7 +414,7 @@
     font-size: 20pt;
   }
 
-  .banner div:nth-child(1) h1 {
+  .banner div:nth-child(1) h2 {
     font-size: 70px;
     padding-top: 50px;
     transition: all 8s;
@@ -397,7 +425,7 @@
     margin: 0 auto;
     grid-area: b;
     border-radius: 35px;
-    background-color: #f52293;
+    background-color: #9C1169;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -430,7 +458,7 @@
 
   .banner div:nth-child(3) span {
     margin-right: 15px;
-    background-color: #f52293;
+    background-color: #9C1169;
     padding: 10px;
     border-radius: 100%;
   }
@@ -439,7 +467,7 @@
 
   .boxHorarios span {
     font-size: 35px;
-    background-color: #f52293;
+    background-color: #9C1169;
     border-radius: 100%;
     color: white;
     padding: 8px;
@@ -487,20 +515,20 @@
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     height: 100%;
-    width: 80%;
+    width: 50%;
   }
 
   .food h3 {
-    border-bottom: 2px solid #f52293;
+    border-bottom: 2px solid #9C1169;
     font-weight: bold;
     font-family: "Lato", sans-serif;
     font-size: 30px;
   }
 
-  .food p {
+  .food h4 {
     font-family: "Lato", sans-serif;
     font-size: 20pt;
-    background: #f52293;
+    background: #9C1169;
     width: 50%;
     margin: 0 auto;
     color: white;
@@ -565,7 +593,7 @@
 
   .newsletter button {
     width: 20%;
-    background-color: #f52293;
+    background-color: #9C1169;
     margin: 5px auto;
     padding: 15px;
     border-radius: 10px;
@@ -590,20 +618,18 @@
   }
   /*** ESTILOS MENU PLATOS ***/
   .food {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-  .food p {
+  .food h4 {
     width: 80%;
-    border-top: 2px solid #f52293;
+    border-top: 2px solid #9C1169;
   }
-  .food h3 {
+  .food h4 {
     border: none;
   }
 
   /*** ESTILOS NEWSLETTER ***/
-  .newsletter {
-    margin-top: -200px;
-  }
+
   .newsletter div:nth-child(2) {
     width: 30%;
   }
@@ -613,6 +639,13 @@
   .newsletter button {
     width: 10%;
   }
+  .video {
+    display: grid;
+    width: 80%;
+    margin: 0px auto;
+    height: 500px;
+    text-align: center;
+  }
 }
 /*MEDIA QUERY corregir img platos para PC*/
 @media (min-width: 1590px) {
@@ -621,11 +654,11 @@
   }
   /*** ESTILOS MENU PLATOS ***/
   .food img {
-    width: 65%;
+    width: 45%;
   }
-  .food p {
+  .food h4 {
     width: 65%;
-    border-top: 2px solid #f52293;
+    border-top: 2px solid #9C1169;
   }
 }
 
