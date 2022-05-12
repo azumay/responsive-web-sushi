@@ -7,6 +7,15 @@
   margin: auto;
 }
 
+.videojs{
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+}
+
+form legend{
+  margin: auto;
+  padding: 10px;
+}
 .form {
   border: 3px solid #9C1169;
   padding: 8px;

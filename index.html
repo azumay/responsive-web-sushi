@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+    <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
     <meta charset="UTF-8" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="img/logo-sushi.svg" />
@@ -9,9 +12,21 @@
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="icomoon/style.css" />
     <link rel="stylesheet" href="css/estilos-tabla.css" />
+
+        <!-- Dependencies -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="./jquery-3.6.0.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="build/ableplayer.min.css" type="text/css"/>
+
+    <!-- JavaScript -->
+    <script src="build/ableplayer.min.js"></script>
+
     <title>Web sushi</title>
   </head>
-
+ 
   <body>
     <nav class="nav" role="navigation">
       <div>
@@ -124,7 +139,19 @@
     </div>
 
     <footer role="contentinfo">
-      <div class="contenedor">
+      
+ <div class="videojs" > 
+   <div></div>
+   <div>
+      <video  id="video1" data-able-player preload="auto" width="480" height="360" poster="path_to_image.jpg">
+        <source type="video/mp4" src="media/video.mp4" data-desc-src="media/video.mp4"/>
+        <track kind="subtitles" src="media/subs-es.vtt" srclang="es" label="Español"/>
+      
+      </video>
+    </div>
+    <div></div>
+  </div>
+    <div class="contenedor">
         <p class="copy">Xavi Yamuza &copy; 2021</p>
         <div class="redes">
           <a href="https://www.instagram.com/azumay404/" target="_blank" aria-label="ver instagram">
@@ -141,6 +168,7 @@
 
           <span class="icon-youtube"></span>
         </div>
+      </div>
       </div>
     </footer>
   </body>

@@ -1,0 +1,214 @@
+﻿WEBVTT FILE
+
+00:04:00. --> 00:00:07.860
+Para crear un repositorio en GitHub,
+
+
+00:00:07.890 --> 00:00:14.300
+lo primero que tenemos que hacer es crear
+un directorio de prueba.
+
+3
+00:00:14.330 --> 00:00:17.180
+Vamos a ponerle prueba
+
+4
+00:00:17.210 --> 00:00:21.020
+dentro, agregamos todo nuestro código.
+
+5
+00:00:21.050 --> 00:00:27.720
+Aquí vamos a crear un index.html
+con nuestro CSS.
+
+6
+00:00:31.120 --> 00:00:35.240
+Y aquí es donde agregaremos
+nuestro código.
+
+7
+00:00:38.560 --> 00:00:43.500
+Nuestro código iremos a través de esto
+
+8
+00:00:43.530 --> 00:00:45.180
+una vez estamos dentro.
+
+9
+00:00:45.210 --> 00:00:50.740
+Le daremos al botón ADD
+y le daremos a la opción Add.
+
+10
+00:00:50.770 --> 00:00:53.640
+Existen Repository.
+
+11
+00:00:53.840 --> 00:00:56.820
+Aquí nos va a pedir la ruta
+de nuestro repositorio.
+
+12
+00:00:56.850 --> 00:01:00.680
+En nuestro caso lo hemos
+guardado en el escritorio.
+
+13
+00:01:00.920 --> 00:01:02.280
+A qué?
+
+14
+00:01:04.720 --> 00:01:07.440
+Ahora nos indica que este directorio no
+
+15
+00:01:07.470 --> 00:01:12.600
+aparece en Git,
+por lo que nos pregunta si queremos crear
+
+16
+00:01:12.630 --> 00:01:18.620
+un repositorio, le daremos que si a crear
+le daremos un nombre.
+
+17
+00:01:18.650 --> 00:01:23.280
+En nuestro caso prueba M9 una descripción.
+
+18
+00:01:27.440 --> 00:01:30.760
+Y nos da la opción de inicializar este
+
+19
+00:01:30.790 --> 00:01:39.980
+repositorio con un Redmi, que es como un
+mensaje informativo de ese repositorio.
+
+20
+00:01:40.010 --> 00:01:43.210
+Nuestro caso no le agregaremos
+
+21
+00:01:43.240 --> 00:01:48.570
+la licencia que va a tener nuestro código
+
+22
+00:01:48.600 --> 00:01:50.540
+y en que lenguaje está hecho.
+
+23
+00:01:50.570 --> 00:01:56.780
+En nuestro caso no lo pondremos nada
+de esto, le daremos a crear repositorio
+
+24
+00:01:56.810 --> 00:02:01.740
+y ya nos aparecerá aquí
+con un icono de un ordenador.
+
+25
+00:02:01.770 --> 00:02:03.820
+Si clicamos y vamos dentro,
+
+26
+00:02:03.850 --> 00:02:09.280
+nos saldrá los cambios que hemos
+hecho en este repositorio.
+
+27
+00:02:09.440 --> 00:02:13.800
+Como podéis ver,
+nos aparecerá aquí los cambios de estilos
+
+28
+00:02:13.830 --> 00:02:21.600
+como que hemos agregado este fichero
+y los cambios agregados en index.html.
+
+29
+00:02:21.630 --> 00:02:23.060
+Como podéis ver,
+
+30
+00:02:23.090 --> 00:02:28.520
+lo que aparece en verde es lo que hemos
+agregado dentro de ese fichero.
+
+31
+00:02:31.840 --> 00:02:35.300
+Una vez hemos visto el historial,
+
+32
+00:02:35.330 --> 00:02:39.380
+es el momento de publicarlo
+en nuestro GitHub.
+
+33
+00:02:39.410 --> 00:02:42.640
+Para ello vamos a Publish Repository,
+
+34
+00:02:42.760 --> 00:02:45.660
+nombre visible en GitHub.
+
+35
+00:02:45.690 --> 00:02:48.920
+Nosotros pondremos prueba M9
+
+36
+00:02:49.400 --> 00:02:53.060
+y la descripción que hemos
+puesto por defecto antes.
+
+37
+00:02:53.090 --> 00:02:55.820
+Aquí nos sale un checkbox
+
+38
+00:02:55.850 --> 00:02:59.900
+que es bastante importante,
+ya que nos pregunta si nuestro código,
+
+39
+00:02:59.930 --> 00:03:06.020
+nuestro repositorio en concreto
+queremos que sea visible al público.
+
+40
+00:03:06.050 --> 00:03:08.780
+En nuestro caso le daremos
+
+41
+00:03:08.810 --> 00:03:13.120
+le dejaremos el check,
+ya que no queremos que este repositorio
+
+42
+00:03:13.150 --> 00:03:19.720
+sea visto por nadie más, hace que tan solo
+tenemos que darle a Pobles Repository.
+
+43
+00:03:29.360 --> 00:03:34.800
+Una vez hemos hecho eso,
+nos iremos a nuestros repositorios.
+
+44
+00:03:36.160 --> 00:03:39.300
+Y ya nos aparecerá nuestro
+nuevo repositorio.
+
+45
+00:03:39.330 --> 00:03:44.560
+Prueba M9 Si entramos dentro,
+nos aparecerá.
+
+46
+00:03:45.240 --> 00:03:50.920
+El código que hemos
+agregado en dicho proyecto.
+
+47
+00:03:52.000 --> 00:03:52.960
+Aquí lo podéis ver.
+
